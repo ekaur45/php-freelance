@@ -1,0 +1,187 @@
+:root {
+    --bg-color: rgba(219,230,251, 1);
+    --text-color: rgba(0,134,224, 1);
+    --text-soft-color: rgba(0,134,224, 1);
+    --text-strong-color: rgba(0,76,131, 1);
+    --subtle-color: rgba(227,235,252, 1);
+    --border-color: rgba(163,197,250, 1);
+    --shadow-color: rgba(135,172,228, 1);
+    --input-color: rgba(255,255,255, 1);
+    --outline-color: rgba(35,218,253, 1);
+    --mark-color: rgba(0,143,167, 0.08);
+    --special-color: rgba(0,143,167, 1);
+    --special-bg-color: rgba(0,162,189, 1);
+    --special-text-color: rgba(255,255,255, 1);
+    --special-shadow-color: rgba(38,112,130, 1);
+    --special-mark-color: rgba(255,255,255, 0.08);
+    --light-color: rgba(226,247,255, 1);
+    --dark-color: rgba(24,77,90, 1);
+    --text-color-rgb: 0,134,224;
+    --bg-color-rgb: 219,230,251;
+    --subtle-color-rgb: 227,235,252;
+    --special-color-rgb: 0,143,167;
+    --special-text-color-rgb: 255,255,255;
+    --special-bg-color-rgb: 0,162,189;
+    --shadow-color-rgb: 135,172,228;
+    --special-shadow-color-rgb: 38,112,130;
+    --outline-color-rgb: 35,218,253;
+    --dark-color-rgb: 24,77,90;
+    --light-color-rgb: 226,247,255;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: rgba(37,47,64, 1);
+      --text-color: rgba(51,139,223, 1);
+      --text-soft-color: rgba(51,139,223, 1);
+      --text-strong-color: rgba(151,189,248, 1);
+      --subtle-color: rgba(33,43,58, 1);
+      --border-color: rgba(58,75,102, 1);
+      --shadow-color: rgba(0,0,0, 1);
+      --input-color: rgba(32,32,32, 1);
+      --outline-color: rgba(39,180,209, 1);
+      --mark-color: rgba(21,149,173, 0.08);
+      --special-color: rgba(21,149,173, 1);
+      --special-bg-color: rgba(15,121,142, 1);
+      --special-text-color: rgba(211,225,231, 1);
+      --special-shadow-color: rgba(12,49,58, 1);
+      --special-mark-color: rgba(211,225,231, 0.08);
+      --light-color: rgba(123,226,254, 1);
+      --dark-color: rgba(16,58,68, 1);
+      --text-color-rgb: 51,139,223;
+      --bg-color-rgb: 37,47,64;
+      --subtle-color-rgb: 33,43,58;
+      --special-color-rgb: 21,149,173;
+      --special-text-color-rgb: 211,225,231;
+      --special-bg-color-rgb: 15,121,142;
+      --shadow-color-rgb: 0,0,0;
+      --special-shadow-color-rgb: 12,49,58;
+      --outline-color-rgb: 39,180,209;
+      --dark-color-rgb: 16,58,68;
+      --light-color-rgb: 123,226,254;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) and (prefers-contrast: more) {
+    :root {
+      --bg-color: rgba(219,230,251, 1);
+      --text-color: rgba(0,105,178, 1);
+      --text-soft-color: rgba(0,105,178, 1);
+      --text-strong-color: rgba(0,76,131, 1);
+      --subtle-color: rgba(227,235,252, 1);
+      --border-color: rgba(113,144,192, 1);
+      --shadow-color: rgba(109,140,186, 1);
+      --input-color: rgba(255,255,255, 1);
+      --outline-color: rgba(32,201,233, 1);
+      --mark-color: rgba(0,112,132, 0.16);
+      --special-color: rgba(0,112,132, 1);
+      --special-bg-color: rgba(0,130,152, 1);
+      --special-text-color: rgba(255,255,255, 1);
+      --special-shadow-color: rgba(15,57,67, 1);
+      --special-mark-color: rgba(255,255,255, 0.16);
+      --light-color: rgba(226,247,255, 1);
+      --dark-color: rgba(24,77,90, 1);
+      --text-color-rgb: 0,105,178;
+      --bg-color-rgb: 219,230,251;
+      --subtle-color-rgb: 227,235,252;
+      --special-color-rgb: 0,112,132;
+      --special-text-color-rgb: 255,255,255;
+      --special-bg-color-rgb: 0,130,152;
+      --shadow-color-rgb: 109,140,186;
+      --special-shadow-color-rgb: 15,57,67;
+      --outline-color-rgb: 32,201,233;
+      --dark-color-rgb: 24,77,90;
+      --light-color-rgb: 226,247,255;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+    :root {
+      --bg-color: rgba(37,47,64, 1);
+      --text-color: rgba(61,153,244, 1);
+      --text-soft-color: rgba(61,153,244, 1);
+      --text-strong-color: rgba(151,189,248, 1);
+      --subtle-color: rgba(33,43,58, 1);
+      --border-color: rgba(89,115,153, 1);
+      --shadow-color: rgba(0,0,0, 1);
+      --input-color: rgba(32,32,32, 1);
+      --outline-color: rgba(41,187,217, 1);
+      --mark-color: rgba(24,164,191, 0.16);
+      --special-color: rgba(24,164,191, 1);
+      --special-bg-color: rgba(14,119,139, 1);
+      --special-text-color: rgba(234,240,243, 1);
+      --special-shadow-color: rgba(0,0,0, 1);
+      --special-mark-color: rgba(234,240,243, 0.16);
+      --light-color: rgba(183,236,254, 1);
+      --dark-color: rgba(16,58,68, 1);
+      --text-color-rgb: 61,153,244;
+      --bg-color-rgb: 37,47,64;
+      --subtle-color-rgb: 33,43,58;
+      --special-color-rgb: 24,164,191;
+      --special-text-color-rgb: 234,240,243;
+      --special-bg-color-rgb: 14,119,139;
+      --shadow-color-rgb: 0,0,0;
+      --special-shadow-color-rgb: 0,0,0;
+      --outline-color-rgb: 41,187,217;
+      --dark-color-rgb: 16,58,68;
+      --light-color-rgb: 183,236,254;
+    }
+  }
+/* :root{    
+    --bg-default:"";
+    --bg-primary:"";
+    --bg-success:"";
+    --bg-danger:"";
+    --bg-warning:"";
+    --bg-info:"";
+
+    --bg-default-25:"";
+    --bg-primary-25:"";
+    --bg-success-25:"";
+    --bg-danger-25:"";
+    --bg-warning-25:"";
+    --bg-info-25:"";
+
+
+    --bg-default-50:"";
+    --bg-primary-50:"";
+    --bg-success-50:"";
+    --bg-danger-50:"";
+    --bg-warning-50:"";
+    --bg-info-50:"";
+
+    --bg-default-75:"";
+    --bg-primary-75:"";
+    --bg-success-75:"";
+    --bg-danger-75:"";
+    --bg-warning-75:"";
+    --bg-info-75:"";
+
+    --text-default:"";
+    --text-primary:"";
+    --text-success:"";
+    --text-danger:"";
+    --text-warning:"";
+    --text-info:"";
+
+    --text-default-25:"";
+    --text-primary-25:"";
+    --text-success-25:"";
+    --text-danger-25:"";
+    --text-warning-25:"";
+    --text-info-25:"";
+
+    --text-default-50:"";
+    --text-primary-50:"";
+    --text-success-50:"";
+    --text-danger-50:"";
+    --text-warning-50:"";
+    --text-info-50:"";
+
+    --text-default-75:"";
+    --text-primary-75:"";
+    --text-success-75:"";
+    --text-danger-75:"";
+    --text-warning-75:"";
+    --text-info-75:"";
+} */
