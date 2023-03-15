@@ -1,9 +1,11 @@
 <?php
-$_CONFIG =(object) [
-    "DATABASE"=> (object)[
+$_CONFIG =[
+    "DATABASE"=> [
         "HOST" =>"localhost",
         "USERNAME" => "root",
         "PASSWORD" => "test123",
-        "DB"=>"familybankingsystem"
+        "DB"=>"familybanking"
     ]
 ];
+
+return $_CONFIG;
