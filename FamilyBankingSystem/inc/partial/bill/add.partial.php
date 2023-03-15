@@ -8,7 +8,7 @@ $month = date("F");
     <div class="row">
         <div class="col-md-4 mb-3">
             <div class="form-group">
-                <select name="billType" class="form-select">
+                <select name="billType" class="form-select" required>
                     <?php foreach ($billTypes as  $value) { ?>
                         <option value="<?= $value ?>"><?= $value ?></option>
                     <?php } ?>
@@ -31,7 +31,7 @@ $month = date("F");
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-                <input type="number" name="amount" class="form-control" placeholder="Amount">
+                <input type="number" name="amount" class="form-control" placeholder="Amount" required>
             </div>
         </div>
         <div class="col-md-4 mb-3 d-none">

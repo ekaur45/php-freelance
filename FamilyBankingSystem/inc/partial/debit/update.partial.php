@@ -6,28 +6,28 @@
             <div class="form-group">
                 <input type="text" name="title" class="form-control"
                 value="<?=$obj["title"]?>"
-                >
+                required>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
                 <input type="number" name="amount" class="form-control" placeholder="Amount"
                 value="<?=$obj["amount"]?>"
-                >
+                required>
             </div>
         </div>        
         <div class="col-md-4 mb-3">
             <div class="form-group">
                 <input type="number" name="installment" class="form-control"  placeholder="Monthly installment"
                 value="<?=$obj["installment"]?>"
-                >
+                required>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
                 <input type="date" name="dueDate" class="form-control"  placeholder="Due date"
                 value="<?=substr($obj["dueDate"],0,10)?>"
-                >
+                required>
             </div>
         </div>
         <div class="col-md-4">

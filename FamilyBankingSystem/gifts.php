@@ -7,7 +7,13 @@
     <?php include_once "inc/partial/layout/nav.php"; ?>
     <div class="container">
         <?php if($user["userType"] == 'Main user'): ?>
-        <div class="row mt-3">
+      
+
+
+        <?php
+        if (!(isset($_GET["id"]) && !empty($_GET["id"]))) {
+        ?>
+             <div class="row mt-3">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -19,6 +25,23 @@
                 </div>
             </div>
         </div>
+        <?php } else { ?>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Update debit</h4>
+                        </div>
+                        <div class="card-body">
+                            <?php include_once "inc/partial/gift/edit.partial.php"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+
+
+
         <?php endif; ?>
         <div class="row mt-3">
             <div class="col-md-12">

@@ -10,7 +10,7 @@ $month = date("F");
         <input type="hidden" name="id" value="<?=$_GET["id"]?>">
         <div class="col-md-4 mb-3">
             <div class="form-group">
-                <select name="billType" class="form-select">
+                <select name="billType" class="form-select"  required>
                     <?php foreach ($billTypes as  $value) { ?>
                         <option <?=$bill["billType"]==$value?"selected":""?> value="<?= $value ?>"><?= $value ?></option>
                     <?php } ?>
@@ -35,7 +35,7 @@ $month = date("F");
             <div class="form-group">
                 <input type="number" name="amount" class="form-control" placeholder="Amount"
                 value="<?=$bill["amount"]?>"
-                >
+                required>
             </div>
         </div>
         <div class="col-md-4 mb-3 d-none">
