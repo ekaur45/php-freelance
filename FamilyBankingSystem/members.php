@@ -5,45 +5,16 @@
 <?php require_once "inc/session/sessioncheck.php"; ?>
 
 <body>
-<?php include_once "inc/partial/layout/nav.php";?>
+    <?php include_once "inc/partial/layout/nav.php"; ?>
     <div class="container">
-        <form class="card mt-3" action="inc/actions/members/add.action.php" method="post">
-            <div class="card-header">
-                <h3>Add member</h3>
-            </div>
-            <div class="card-body row">
-                <div class="form-group col-md-4 mb-3">
-                    <input type="text" class="form-control" placeholder="First name" name="firstName">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <input type="text" class="form-control" placeholder="Last name" name="lastName">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <input type="text" class="form-control" placeholder="Username" name="username">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <input type="date" class="form-control" placeholder="Date of birth" name="dataOfBirth">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <input type="tel" class="form-control" placeholder="Phone number" name="mobileNumber">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <input type="password" class="form-control" placeholder="Password" name="password">
-                </div>
-                <div class="form-group col-md-4 mb-3">
-                    <select name="userType" class="form-select">
-                        <option value="Basic user">Basic user</option>
-                        <option value="Main user">Main user</option>
-                    </select>
-                </div>
-            </div>
-            <div class="card-footer">
-                <button class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-        <div class="row">
+        <?php if(isset($_GET["id"])&&!empty($_GET["id"])): ?>
+            <?php include_once "inc/partial/members/update.partial.php";?>
+        <?php else: ?>
+            <?php include_once "inc/partial/members/add.partial.php";?>
+        <?php endif; ?>
+        <div class="row mt-3">
             <div class="col-md-12">
-                <?php include_once "inc/partial/members/list.table.php";?>
+                <?php include_once "inc/partial/members/list.table.php"; ?>
             </div>
         </div>
     </div>

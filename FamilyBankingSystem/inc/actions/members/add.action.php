@@ -19,7 +19,7 @@ $existSql = "select * from `users` where username = '$username' or mobileNumber 
 $existResult = $db->__selectSingle($existSql);
 if($existResult&&!empty($existResult)){
     $_SESSION["ERROR"] = "User already exists";
-    header("Location: ../../../add-member.php");
+    header("Location: ../../../members.php");
 }else{
 
     

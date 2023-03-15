@@ -6,18 +6,37 @@
 <body>
 <?php include_once "inc/partial/layout/nav.php";?>
     <div class="container">
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <div class="card">
+        <?php
+        if (!(isset($_GET["id"]) && !empty($_GET["id"]))) {
+        ?>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="card">
                     <div class="card-header">
                         <h4>Add debit</h4>
                     </div>
                     <div class="card-body">
                         <?php include_once "inc/partial/debit/add.partial.php"; ?>
                     </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php } else { ?>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Update debit</h4>
+                        </div>
+                        <div class="card-body">
+                            <?php include_once "inc/partial/debit/update.partial.php"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+
+
         <div class="row mt-3">
             <div class="col-md-12">
                 <?php include_once "inc/partial/debit/list.partial.php"; ?>

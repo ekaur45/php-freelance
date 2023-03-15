@@ -1,16 +1,18 @@
+<?php include_once "inc/actions/bill/get.action.php"?>
 <?php
 $billTypes = ["Water", "Electricity", "Gas", "Internet"];
 $months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 $year = date("Y");
 $month = date("F");
 ?>
-<form action="inc/actions/bill/add.action.php" method="post">
+<form action="inc/actions/bill/update.action.php" method="post">
     <div class="row">
+        <input type="hidden" name="id" value="<?=$_GET["id"]?>">
         <div class="col-md-4 mb-3">
             <div class="form-group">
                 <select name="billType" class="form-select">
                     <?php foreach ($billTypes as  $value) { ?>
-                        <option value="<?= $value ?>"><?= $value ?></option>
+                        <option <?=$bill["billType"]==$value?"selected":""?> value="<?= $value ?>"><?= $value ?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -31,7 +33,9 @@ $month = date("F");
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-                <input type="number" name="amount" class="form-control" placeholder="Amount">
+                <input type="number" name="amount" class="form-control" placeholder="Amount"
+                value="<?=$bill["amount"]?>"
+                >
             </div>
         </div>
         <div class="col-md-4 mb-3 d-none">

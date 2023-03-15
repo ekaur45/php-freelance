@@ -44,7 +44,7 @@
                 </td>
                 <td>
                     <div class="d-flex justify-content-center">
-                        <a href="debits.php?id=<?=$row["id"]?>" class="ms-2 text-info">
+                        <a href="debit.php?id=<?=$row["id"]?>" class="ms-2 text-info">
                             <i class="bi bi-pencil"></i>
                         </a>
                         <a href="inc/actions/debits/delete.action.php?id=<?=$row["id"]?>" class="ms-2 text-danger">
