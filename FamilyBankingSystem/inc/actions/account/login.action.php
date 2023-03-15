@@ -5,7 +5,7 @@ $username = $db->__escape($_POST["username"]);
 $password = $db->__escape($_POST["password"]);
 $hashedPassword = md5($password);
 
-$existSql = "select * from `users` where username = '$username' or mobileNumber = '$mobileNumber'";
+$existSql = "select * from `users` where username = '$username' or mobileNumber = '$username'";
 echo $existSql;
 $existResult = $db->__selectSingle($existSql);
 if($existResult&&!empty($existResult)){
@@ -15,4 +15,9 @@ if($existResult&&!empty($existResult)){
     }
 }
 $_SESSION["ERROR"] = "Invalid credentials";
-header("Location: ../../../login.php");
+//echo md5("Abc@123");
+
+echo $hashedPassword;
+
+
+//header("Location: ../../../login.php");

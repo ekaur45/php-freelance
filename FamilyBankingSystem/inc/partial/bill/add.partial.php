@@ -45,7 +45,7 @@ $month = date("F");
         </div>
         <div class="col-md-4 mb-3">
             <div class="form-group">
-                <input type="number" name="amountPaid" class="form-control" placeholder="Amount paid">
+                <input type="number" name="amountPaid" class="form-control" value="0" placeholder="Amount paid">
             </div>
         </div>
         <div class="col-md-4">

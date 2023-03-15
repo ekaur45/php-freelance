@@ -43,23 +43,26 @@
                     <?=$row["month"]?>
                 </td>
                 <td>
-                    <?=$row["year"]?>
+                    <?=$row["Year"]?>
                 </td>
                 <td>
-                    <?=$row["amount"]?>
+                    $ <?=$row["amount"]?>
                 </td>
                 <td>
-                    <?=$row["amountPaid"]?>
+                    $ <?=$row["amountPaid"]?>
                 </td>
                 <td>
                     <?=$row["status"]?>
                 </td>
                 <td>
                     <div class="d-flex justify-content-center">
-                        <a href="bills.php?id=<?=$rows["id"]?>" class="text-info">
+                        <a href="inc/actions/bill/pay.action.php?id=<?=$row["id"]?>" class="text-success" title="Pay amount">
+                            <i class="bi bi-currency-dollar"></i>
+                        </a>
+                        <a href="bills.php?id=<?=$row["id"]?>" class="ms-2 text-info">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a href="inc/actions/bill/delete.action.php?id=<?=$rows["id"]?>" class="ms-2 text-danger">
+                        <a href="inc/actions/bill/delete.action.php?id=<?=$row["id"]?>" class="ms-2 text-danger">
                             <i class="bi bi-trash"></i>
                         </a>
                     </div>

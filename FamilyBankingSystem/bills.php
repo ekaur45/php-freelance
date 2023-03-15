@@ -4,7 +4,7 @@
 <?php require_once "inc/session/sessioncheck.php"; ?>
 
 <body>
-
+<?php include_once "inc/partial/layout/nav.php";?>
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-12">

@@ -5,10 +5,11 @@
 <?php require_once "inc/session/sessioncheck.php"; ?>
 
 <body>
+<?php include_once "inc/partial/layout/nav.php";?>
     <div class="container">
         <form class="card mt-3" action="inc/actions/members/add.action.php" method="post">
             <div class="card-header">
-                <h3>Signup</h3>
+                <h3>Add member</h3>
             </div>
             <div class="card-body row">
                 <div class="form-group col-md-4 mb-3">
