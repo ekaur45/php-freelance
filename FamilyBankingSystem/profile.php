@@ -52,9 +52,11 @@
                                         <span>
                                             $ <?= $user["monthlySalary"] ?? "0" ?>
                                         </span>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateMonthlySalaryModal">
-                                            <i class="bi bi-pencil"></i>
-                                        </a>
+                                        <?php if ($user["userType"] == 'Main user') { ?>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#updateMonthlySalaryModal">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                        <?php } ?>
                                     </div>
                                 </td>
                             </tr>
@@ -65,9 +67,11 @@
                                         <span>
                                             $ <?= $user["balanceInBank"] ?? "0" ?>
                                         </span>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateBankBalanceModal">
-                                            <i class="bi bi-pencil"></i>
-                                        </a>
+                                        <?php if ($user["userType"] == 'Main user') { ?>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#updateBankBalanceModal">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                        <?php } ?>
                                     </div>
                                 </td>
                             </tr>

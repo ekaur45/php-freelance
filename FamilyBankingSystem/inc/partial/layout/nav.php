@@ -25,19 +25,22 @@ $mainUser = 'Main user';
                 <li class="nav-item">
                     <a class="nav-link <?= isActive("bills.php") ? "active" : "" ?>" href="bills.php">Bills</a>
                 </li>
+                <?php if ($userType == $mainUser) : ?>
                 <li class="nav-item">
                     <a class="nav-link <?= isActive("debit.php") ? "active" : "" ?>" href="debit.php">Debits</a>
                 </li>
+                <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link <?= isActive("gifts.php") ? "active" : "" ?>" href="gifts.php">Gifts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= isActive("statements.php") ? "active" : "" ?>" href="statements.php">Statements</a>
                 </li>
+                <?php if ($userType == $mainUser) : ?>
                 <li class="nav-item">
                     <a class="nav-link <?= isActive("chatbot.php") ? "active" : "" ?>" href="chatbot.php">Chatbot</a>
                 </li>
-
+                <?php endif; ?>
             </ul>
             <div class="d-flex justify-content-end">
                 <div class="dropdown">
